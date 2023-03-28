@@ -235,5 +235,8 @@ color: rgb(227, 227, 227);
 }
 .flecha i{
     color: white;
-   font-size: 30px;
+   font-size: 40px;
+}
+button:hover{
+    cursor: pointer;
 }
