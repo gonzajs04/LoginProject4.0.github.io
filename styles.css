@@ -57,7 +57,7 @@ body{
     }
     .login p{
     
-        text-align: left;
+        text-align: left !important;
     }
 
 }
