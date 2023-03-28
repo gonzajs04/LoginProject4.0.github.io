@@ -132,10 +132,34 @@ input:not([type="checkbox"]){
     height: 35px;
     width: 100%;
 }
+input[type="checkbox"]{
+    margin: .8rem 0;
+  
+}
+@media(min-width:768px){
+    input[type="checkbox"]{
+        margin: 0;
+      
+    } 
+
+}
 .container-rememberme{
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+}
+.container-rememberme a{
+    font-size: .8rem;
+}
+@media(min-width:768px){
+    .container-rememberme{
+        flex-direction: row;
+        align-items: left;
+        font-size: 1rem;
+    }
+
 }
 
 .container-rememberme a{
@@ -211,14 +235,14 @@ input[type="submit"]:first-child{
 }
 .container-datahero{
   
-
+ 
     height: 100%;
     position: absolute;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
- 
+    padding: 0 .5rem;
     
 }
 
@@ -230,8 +254,8 @@ input[type="submit"]:first-child{
 }
 .container-data{
 
-  margin: 3rem 4rem;
-padding: .5rem 2.5rem;
+ 
+
 backdrop-filter: blur(1rem);
 
 }
@@ -241,7 +265,7 @@ backdrop-filter: blur(1rem);
 @media(min-width:768px){
     
   .container-autorstars{
-    margin-top: 1rem;
+    margin-top: 1rem;   transition: .5s all ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -259,7 +283,7 @@ backdrop-filter: blur(1rem);
 
 
 .container-datahero blockquote{
-
+    transition: .5s font-size ease-in-out;
     font-size: 1.3rem ;
 padding: 0 .3rem;
 margin: 0;
